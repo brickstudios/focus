@@ -1,0 +1,9 @@
+div.container {
+  @include outer-container;
+}
+
+section.typography {
+	@include span-columns(8);
+}
+
+.half-block {@include span-columns(10);}
