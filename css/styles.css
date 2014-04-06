@@ -372,7 +372,7 @@ input[type="submit"] {
   text-shadow: 0 1px 0 #1b4f9a;
   background-clip: padding-box;
   -webkit-font-smoothing: antialiased;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
   line-height: 1em; }
   button:hover:not(:disabled),
@@ -395,9 +395,9 @@ input[type="submit"] {
 body {
   color: #333333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.5em; }
+  line-height: 2.25em; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -406,25 +406,25 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility; }
 
 h1 {
-  font-size: 2.25em; }
+  font-size: 3.375em; }
 
 h2 {
-  font-size: 2em; }
+  font-size: 3em; }
 
 h3 {
-  font-size: 1.75em; }
+  font-size: 2.625em; }
 
 h4 {
-  font-size: 1.5em; }
+  font-size: 2.25em; }
 
 h5 {
-  font-size: 1.25em; }
+  font-size: 1.875em; }
 
 h6 {
-  font-size: 1em; }
+  font-size: 1.5em; }
 
 p {
-  margin: 0 0 0.75em; }
+  margin: 0 0 1.125em; }
 
 a {
   color: #477dca;
@@ -443,7 +443,7 @@ hr {
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: 1.5em 0; }
+  margin: 2.25em 0; }
 
 img {
   margin: 0;
@@ -455,10 +455,10 @@ abbr, acronym {
 
 address {
   display: block;
-  margin: 0 0 0.75em; }
+  margin: 0 0 1.125em; }
 
 hgroup {
-  margin-bottom: 0.75em; }
+  margin-bottom: 1.125em; }
 
 del {
   color: #595959; }
@@ -466,8 +466,8 @@ del {
 blockquote {
   border-left: 2px solid #dddddd;
   color: #595959;
-  margin: 1.5em 0;
-  padding-left: 0.75em; }
+  margin: 2.25em 0;
+  padding-left: 1.125em; }
 
 cite {
   color: #737373;
@@ -478,19 +478,19 @@ cite {
 fieldset {
   background: #f7f7f7;
   border: 1px solid #dddddd;
-  margin: 0 0 0.75em 0;
-  padding: 1.5em; }
+  margin: 0 0 1.125em 0;
+  padding: 2.25em; }
 
 input,
 label,
 select {
   display: block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em; }
+  font-size: 1.5em; }
 
 label {
   font-weight: bold;
-  margin-bottom: 0.375em; }
+  margin-bottom: 0.5625em; }
   label.required:after {
     content: "*"; }
   label abbr {
@@ -510,9 +510,9 @@ select[multiple=multiple] {
   border: 1px solid #dddddd;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  margin-bottom: 0.75em;
-  padding: 0.5em 0.5em;
+  font-size: 1.5em;
+  margin-bottom: 1.125em;
+  padding: 0.75em 0.75em;
   width: 100%; }
   textarea:hover,
   input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
@@ -537,7 +537,7 @@ input[type="search"] {
 
 input[type="checkbox"], input[type="radio"] {
   display: inline;
-  margin-right: 0.375em; }
+  margin-right: 0.5625em; }
 
 input[type="file"] {
   width: 100%; }
@@ -545,7 +545,7 @@ input[type="file"] {
 select {
   width: auto;
   max-width: 100%;
-  margin-bottom: 1.5em; }
+  margin-bottom: 2.25em; }
 
 button,
 input[type="submit"] {
@@ -561,19 +561,19 @@ input[type="submit"] {
 
 table {
   border-collapse: collapse;
-  margin: 0.75em 0;
+  margin: 1.125em 0;
   table-layout: fixed;
   width: 100%; }
 
 th {
   border-bottom: 1px solid #b7b7b7;
   font-weight: bold;
-  padding: 0.75em 0;
+  padding: 1.125em 0;
   text-align: left; }
 
 td {
   border-bottom: 1px solid #dddddd;
-  padding: 0.75em 0; }
+  padding: 1.125em 0; }
 
 tr, td, th {
   vertical-align: middle; }
@@ -583,11 +583,11 @@ ul, ol {
   padding: 0;
   list-style-type: none; }
 dl {
-  line-height: 1.5em;
-  margin-bottom: 0.75em; }
+  line-height: 2.25em;
+  margin-bottom: 1.125em; }
   dl dt {
     font-weight: bold;
-    margin-top: 0.75em; }
+    margin-top: 1.125em; }
   dl dd {
     margin: 0; }
 
@@ -608,7 +608,7 @@ body:before {
   height: 100%;
   left: 0;
   margin: 0 auto;
-  max-width: 73.75em;
+  max-width: 80em;
   opacity: 0.1;
   position: fixed;
   right: 0;
@@ -658,7 +658,7 @@ body:before {
 
 div.container {
   *zoom: 1;
-  max-width: 73.75em;
+  max-width: 80em;
   margin-left: auto;
   margin-right: auto; }
   div.container:before, div.container:after {
@@ -667,20 +667,32 @@ div.container {
   div.container:after {
     clear: both; }
 
-section.typography {
+.typography {
   float: left;
   display: block;
   margin-right: 1.5873%;
-  width: 49.20635%; }
-  section.typography:last-child {
+  width: 49.20635%;
+  margin-left: 19.04762%;
+  margin-top: 15%; }
+  .typography:last-child {
     margin-right: 0; }
 
-.half-block {
+.two-weeks {
   float: left;
   display: block;
   margin-right: 1.5873%;
-  width: 61.90476%; }
-  .half-block:last-child {
+  width: 49.20635%;
+  margin-left: 19.04762%; }
+  .two-weeks:last-child {
+    margin-right: 0; }
+
+.action-items {
+  float: left;
+  display: block;
+  margin-right: 1.5873%;
+  width: 49.20635%;
+  margin-left: 19.04762%; }
+  .action-items:last-child {
     margin-right: 0; }
 
 nav {
@@ -689,7 +701,7 @@ nav {
 
 .nav-container {
   *zoom: 1;
-  max-width: 73.75em;
+  max-width: 80em;
   margin-left: auto;
   margin-right: auto; }
   .nav-container:before, .nav-container:after {
