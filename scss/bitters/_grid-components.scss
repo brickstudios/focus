@@ -1,5 +1,24 @@
+body {
+	background-color: #202020;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow: hidden;
+	@include background-image(url("/images/sfalley.jpg"));
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: .2;
+	}
+
 div.container {
-  @include outer-container;
+  	@include outer-container;
+  	height: 100vh;
 }
 
 .typography {
@@ -11,9 +30,16 @@ div.container {
 .two-weeks {
 	@include span-columns(8);
 	@include shift(3);
+	display: none;
 }
 
 .action-items {
 	@include span-columns(8);
 	@include shift(3);
+	display: none;
+}
+
+.overlay {
+	background-color: #212121;
+	@include outer-container;
 }
