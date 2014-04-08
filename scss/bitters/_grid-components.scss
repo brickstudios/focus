@@ -9,11 +9,11 @@ body {
 	right:0;
 	bottom:0;
 	overflow: hidden;
-	@include background-image(url("/images/sfalley.jpg"));
+	@include background-image(url("/images/sfalley3.jpg"));
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: .2;
+	opacity: .5;
 	}
 
 div.container {
