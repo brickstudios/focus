@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
-		<!-- META -->
         <meta charset="UTF-8" />
         <meta name="description" content="" />
 
@@ -9,83 +8,12 @@
 
  		<link rel="stylesheet" href="css/styles.css">
  		<script src="scripts/modernizr.custom.js"></script>
-
-<script type="text/javascript">
-<!--
-
-function init ( )
-{
-  timeDisplay = document.createTextNode ( "" );
-  document.getElementById("clock").appendChild ( timeDisplay );
-}
-
-function updateClock ( )
-{
-  var currentTime = new Date ( );
-
-  var currentHours = currentTime.getHours ( );
-  var currentMinutes = currentTime.getMinutes ( );
-
-  // Pad the minutes and seconds with leading zeros, if required
-  currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-
-  // Choose either "AM" or "PM" as appropriate
-  var timeOfDay = ( currentHours < 12 ) ? "a" : "p";
-
-  // Convert the hours component to 12-hour format if needed
-  currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
-
-  // Convert an hours component of "0" to "12"
-  currentHours = ( currentHours == 0 ) ? 12 : currentHours;
-
-  // Compose the string for display
-  var currentTimeString = currentHours + ":" + currentMinutes + timeOfDay;
-
-  // Update the time display
-  document.getElementById("clock").firstChild.nodeValue = currentTimeString;
-}
-
-
-function date_time(id)
-{
-        date = new Date;
-        year = date.getFullYear();
-        month = date.getMonth();
-        months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
-        d = date.getDate();
-        day = date.getDay();
-        days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
-        h = date.getHours();
-        if(h<10)
-        {
-                h = "0"+h;
-        }
-        m = date.getMinutes();
-        if(m<10)
-        {
-                m = "0"+m;
-        }
-        s = date.getSeconds();
-        if(s<10)
-        {
-                s = "0"+s;
-        }
-        result = ''+days[day],+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
-        document.getElementById(id).innerHTML = result;
-        setTimeout('date_time("'+id+'");','1000');
-        return true;
-}
-
-
-
-// -->
-</script>
-
+ 		<script src="scripts/date-time.js"></script>
 
 	</head>
 	<body onload="updateClock(); setInterval('updateClock()', 1000 ), date_time('date_time')">
+		<!--InstaBG -->
 		<ul class="background">
-
 			<li></li>
 		</ul>
 		<!--Page Container-->
@@ -96,102 +24,104 @@ function date_time(id)
 					<h1><span id="clock">&nbsp;</span></h1>
 					
 					<h3>Partly Cloudy - 75 degress</h3>
-
 					<a id="showLeft">Show Left</a>
 					<a id="showRight">Show Right</a>
 				</div>
 			</section>
 
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+				<h3>Get 'er Done</h3>
+				<h6>+ Today</h6>
+				<a href="#">Call Jake</a>
+				<a href="#">Check Insurance</a>
+				<a href="#">Pay Taxes</a>
+
+				<h6>+ Tommorow</h6>
+				<a href="#">Good Eggs Order</a>
+				<a href="#">Laundry</a>
+				<a href="#">Pick Up Contacts</a>
+				<a href="#">Schedule meeting w/Anuj</a>
+
+				<h6>+ Upcoming</h6>
+				<a href="#">Clean Car</a>
+				<a href="#">Pick Up Gift</a>
+				<a href="#">Drop off keys</a>
+				<a href="#">Email Steve</a>
+				<a href="#">Cancel Subscription</a>
+				<a href="#">Create menu</a>
+
+				<h6>+ Someday</h6>
+				<a href="#">Hike</a>
+				<a href="#">Harding Tee Time</a>
+				<a href="#">Research Instagram API</a>
+				<a href="#">Get Sarah's Gift</a>
+				<a href="#">Change Passwords</a>
+				<a href="#">Rocks Glasses</a>
+			</nav>
+
 			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
 			    <h3>2 WEEK AGENDA</h3>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Tue Apr 15</strong><br>
+			    	GoPro (2:30-3:30p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Wed Apr 16</strong><br>
+			    	Coffee w/Liz (4:30-5p)<br>
+			    	Yoga (7-9p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Thu Apr 17</strong><br>
+			    	QOTSA (7-9p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Fri Apr 18</strong><br>
+			    	Tony's Pizza (7-9p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Sat Apr 19</strong><br>
+			    	Yoga (7-9p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Sun Apr 20</strong><br>
+			    	Easter Sunday (All Day)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Mon Apr 21</strong><br>
+			    	<strong>CONGRATS!</strong>
+			    	<br>You have no Appointments.
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Tue Apr 22</strong><br>
+			    	Yoga (7-9p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Wed Apr 23</strong><br>
+			    	Beers w/Brigg @ 15 Romolo (7-9p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Thu Apr 24</strong><br>
+			    	Yoga (7-9p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Fri Apr 25</strong><br>
+			    	Eye Doctor (4:30-5p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Sat Apr 26</strong><br>
+			    	Yoga (7-9p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Sun Apr 27</strong><br>
+			    	Ortho Appt: Sarah (2-3p)
 			    </a>
 			    <a href="#">
-			    	<strong>Sun Apr 6</strong><br>
-			    	6p – Dinner with Sarah<br>
-			    	9:30p – Movie & popcorn
+			    	<strong>Mon Apr 28</strong><br>
+			    	Ortho Appt: Sarah (2-3p)
 			    </a>
-
-			</nav>
-
-
-			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-				<h3>Menu</h3>
-				<a href="#">Celery seakale</a>
-				<a href="#">Dulse daikon</a>
-				<a href="#">Zucchini garlic</a>
-				<a href="#">Catsear azuki bean</a>
-				<a href="#">Dandelion bunya</a>
-				<a href="#">Rutabaga</a>
 			</nav>
 			
 		</div>
-
-
-
 
 
 <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
@@ -211,7 +141,6 @@ function date_time(id)
 				classie.toggle( menuRight, 'cbp-spmenu-open' );
 				disableOther( 'showRight' );
 			};
-			
 		</script>
 
 

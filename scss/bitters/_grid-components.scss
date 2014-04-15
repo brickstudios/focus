@@ -9,11 +9,11 @@ body {
 	right:0;
 	bottom:0;
 	overflow: hidden;
-	@include background-image(url("/images/sfalley3.jpg"));
+	@include background-image(url("/images/rotate.php"));
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: .5;
+	opacity: .4;
 	}
 
 div.container {
@@ -21,9 +21,10 @@ div.container {
 }
 
 .typography {
-	@include span-columns(10);
+	@include span-columns(6);
 	@include shift(3);
 	padding-top:20%;
 	z-index: 999999999; position: absolute;
+	text-align: center;
 }
 

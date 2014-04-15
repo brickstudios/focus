@@ -401,7 +401,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.25em;
+  line-height: 1.1em;
   margin: 0;
   text-rendering: optimizeLegibility; }
 
@@ -731,12 +731,12 @@ body {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  background-image: url("/images/sfalley3.jpg");
-  background-image: url("/images/sfalley3.jpg");
+  background-image: url("/images/rotate.php");
+  background-image: url("/images/rotate.php");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .5; }
+  opacity: .4; }
 
 div.container {
   *zoom: 1;
@@ -753,11 +753,12 @@ div.container {
   float: left;
   display: block;
   margin-right: 1.81818%;
-  width: 70.90909%;
+  width: 41.81818%;
   margin-left: 21.81818%;
   padding-top: 20%;
   z-index: 999999999;
-  position: absolute; }
+  position: absolute;
+  text-align: center; }
   .typography:last-child {
     margin-right: 0; }
 
