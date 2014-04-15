@@ -7,125 +7,141 @@
 		<title>F0CUS</title>
 
  		<link rel="stylesheet" href="css/styles.css">
- 		<script src="scripts/modernizr.custom.js"></script>
- 		<script src="scripts/date-time.js"></script>
 
 	</head>
 	<body onload="updateClock(); setInterval('updateClock()', 1000 ), date_time('date_time')">
-		<!--InstaBG -->
-		<ul class="background">
-			<li></li>
-		</ul>
+		
 		<!--Page Container-->
 		<div class="container">
 			<section>
+
+				<!-- open/close -->
+				<div class="overlay overlay-hugeinc">
+					<button class="overlay-close">Close</button>
+					<nav>
+						<p>
+							Because I don’t understand the business problem of a product I dislike I choose to focus on a more personal app - the ‘home’ screen. Remember the HS? That little house icon? Netscape. It still exists. but our behavior around it has changed. So I chose to create a custom Google Chrome Extension. One that would replace my current one – Momentum. Don’t get me wrong it’s nice, but it’s worst feature is the lack of customization. If it were more modular to customize in a minimal direction (ex: only 5-6 items on the scene) I would find it more useful. Right now it’s sort of informative & pretty (photos). But what if it could be both? 
+						</p>
+						<p>
+							Side bar: my wife & I have our photo streams integrated into all of the screens savers in the house particularly the TV screens. It’s been a delight to have recent memories played back to us regularly & passively. particularly my Instagram pics. I wanted this extension to have the same effect. A reflection of the recent past (instagram), temperature and clock for the present and a limited 2 week calendar for the future.
+						</p>
+						<p>
+							The presentation has to be minimal, direct and weighted accordingly.
+						</p>
+						<p>I call it FOCUS.</p>
+					</nav>
+				</div>
 				<div class="typography">
-					<h2>Hello. It's <span id="date_time"></span></h2>
+					<h2><a id="trigger-overlay">Hello.</a> It's <span id="date_time"></span></h2>
 					<h1><span id="clock">&nbsp;</span></h1>
 					
-					<h3>Partly Cloudy - 75 degress</h3>
-					<a id="showLeft">Show Left</a>
-					<a id="showRight">Show Right</a>
+					<a id="showLeft">Agenda</a> | 
+					<a id="showRight">Tasks</a>
 				</div>
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+				    <h3>2 Week Agenda</h3>
+				    <a href="#">
+				    	<strong>Tue Apr 15</strong><br>
+				    	GoPro (2:30-3:30p)
+				    </a>
+				    <a href="#">
+				    	<strong>Wed Apr 16</strong><br>
+				    	Coffee w/Liz (4:30-5p)<br>
+				    	Yoga (7-9p)
+				    </a>
+				    <a href="#">
+				    	<strong>Thu Apr 17</strong><br>
+				    	QOTSA (7-9p)
+				    </a>
+				    <a href="#">
+				    	<strong>Fri Apr 18</strong><br>
+				    	Tony's Pizza (7-9p)
+				    </a>
+				    <a href="#">
+				    	<strong>Sat Apr 19</strong><br>
+				    	Yoga (7-9p)
+				    </a>
+				    <a href="#">
+				    	<strong>Sun Apr 20</strong><br>
+				    	Easter Sunday (All Day)
+				    </a>
+				    <a href="#">
+				    	<strong>Mon Apr 21</strong><br>
+				    	<strong>CONGRATS!</strong>
+				    	<br>You have no Appointments.
+				    </a>
+				    <a href="#">
+				    	<strong>Tue Apr 22</strong><br>
+				    	Yoga (7-9p)
+				    </a>
+				    <a href="#">
+				    	<strong>Wed Apr 23</strong><br>
+				    	Beers w/Brigg @ 15 Romolo (7-9p)
+				    </a>
+				    <a href="#">
+				    	<strong>Thu Apr 24</strong><br>
+				    	Yoga (7-9p)
+				    </a>
+				    <a href="#">
+				    	<strong>Fri Apr 25</strong><br>
+				    	Eye Doctor (4:30-5p)
+				    </a>
+				    <a href="#">
+				    	<strong>Sat Apr 26</strong><br>
+				    	Yoga (7-9p)
+				    </a>
+				    <a href="#">
+				    	<strong>Sun Apr 27</strong><br>
+				    	Ortho Appt: Sarah (2-3p)
+				    </a>
+				    <a href="#">
+				    	<strong>Mon Apr 28</strong><br>
+				    	Ortho Appt: Sarah (2-3p)
+				    </a>
+				</nav>
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+					<h3>Tasks</h3>
+					<h6>Today</h6>
+					<a href="#"><input type="checkbox">Call Jake</a>
+					<a href="#"><input type="checkbox">Check Insurance</a>
+					<a href="#"><input type="checkbox">Pay Taxes</a>
+
+					<h6>Tommorow</h6>
+					<a href="#"><input type="checkbox">Good Eggs Order</a>
+					<a href="#"><input type="checkbox">Laundry</a>
+					<a href="#"><input type="checkbox">Pick Up Contacts</a>
+					<a href="#"><input type="checkbox">Schedule meeting w/Anuj</a>
+
+					<h6>Upcoming</h6>
+					<a href="#"><input type="checkbox">Clean Car</a>
+					<a href="#"><input type="checkbox">Pick Up Gift</a>
+					<a href="#"><input type="checkbox">Drop off keys</a>
+					<a href="#"><input type="checkbox">Email Steve</a>
+					<a href="#"><input type="checkbox">Cancel Subscription</a>
+					<a href="#"><input type="checkbox">Create menu</a>
+
+					<h6>Someday</h6>
+					<a href="#"><input type="checkbox">Hike</a>
+					<a href="#"><input type="checkbox">Harding Tee Time</a>
+					<a href="#"><input type="checkbox">Research Instagram API</a>
+					<a href="#"><input type="checkbox">Get Sarah's Gift</a>
+					<a href="#"><input type="checkbox">Change Passwords</a>
+					<a href="#"><input type="checkbox">Rocks Glasses</a>
+			</nav>
+
 			</section>
 
-<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-				<h3>Get 'er Done</h3>
-				<h6>+ Today</h6>
-				<a href="#">Call Jake</a>
-				<a href="#">Check Insurance</a>
-				<a href="#">Pay Taxes</a>
-
-				<h6>+ Tommorow</h6>
-				<a href="#">Good Eggs Order</a>
-				<a href="#">Laundry</a>
-				<a href="#">Pick Up Contacts</a>
-				<a href="#">Schedule meeting w/Anuj</a>
-
-				<h6>+ Upcoming</h6>
-				<a href="#">Clean Car</a>
-				<a href="#">Pick Up Gift</a>
-				<a href="#">Drop off keys</a>
-				<a href="#">Email Steve</a>
-				<a href="#">Cancel Subscription</a>
-				<a href="#">Create menu</a>
-
-				<h6>+ Someday</h6>
-				<a href="#">Hike</a>
-				<a href="#">Harding Tee Time</a>
-				<a href="#">Research Instagram API</a>
-				<a href="#">Get Sarah's Gift</a>
-				<a href="#">Change Passwords</a>
-				<a href="#">Rocks Glasses</a>
-			</nav>
-
-			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-			    <h3>2 WEEK AGENDA</h3>
-			    <a href="#">
-			    	<strong>Tue Apr 15</strong><br>
-			    	GoPro (2:30-3:30p)
-			    </a>
-			    <a href="#">
-			    	<strong>Wed Apr 16</strong><br>
-			    	Coffee w/Liz (4:30-5p)<br>
-			    	Yoga (7-9p)
-			    </a>
-			    <a href="#">
-			    	<strong>Thu Apr 17</strong><br>
-			    	QOTSA (7-9p)
-			    </a>
-			    <a href="#">
-			    	<strong>Fri Apr 18</strong><br>
-			    	Tony's Pizza (7-9p)
-			    </a>
-			    <a href="#">
-			    	<strong>Sat Apr 19</strong><br>
-			    	Yoga (7-9p)
-			    </a>
-			    <a href="#">
-			    	<strong>Sun Apr 20</strong><br>
-			    	Easter Sunday (All Day)
-			    </a>
-			    <a href="#">
-			    	<strong>Mon Apr 21</strong><br>
-			    	<strong>CONGRATS!</strong>
-			    	<br>You have no Appointments.
-			    </a>
-			    <a href="#">
-			    	<strong>Tue Apr 22</strong><br>
-			    	Yoga (7-9p)
-			    </a>
-			    <a href="#">
-			    	<strong>Wed Apr 23</strong><br>
-			    	Beers w/Brigg @ 15 Romolo (7-9p)
-			    </a>
-			    <a href="#">
-			    	<strong>Thu Apr 24</strong><br>
-			    	Yoga (7-9p)
-			    </a>
-			    <a href="#">
-			    	<strong>Fri Apr 25</strong><br>
-			    	Eye Doctor (4:30-5p)
-			    </a>
-			    <a href="#">
-			    	<strong>Sat Apr 26</strong><br>
-			    	Yoga (7-9p)
-			    </a>
-			    <a href="#">
-			    	<strong>Sun Apr 27</strong><br>
-			    	Ortho Appt: Sarah (2-3p)
-			    </a>
-			    <a href="#">
-			    	<strong>Mon Apr 28</strong><br>
-			    	Ortho Appt: Sarah (2-3p)
-			    </a>
-			</nav>
+			
+			<!--InstaBG -->
+		<ul class="background">
+			<li></li>
+		</ul>
 			
 		</div>
 
 
 <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
-		<script src="scripts/classie.js"></script>
+
 		<script>
 			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
 				menuRight = document.getElementById( 'cbp-spmenu-s2' ),
@@ -142,8 +158,14 @@
 				disableOther( 'showRight' );
 			};
 		</script>
+		
 
 
+		<script src="scripts/modernizr.custom.js"></script>
+		<script src="scripts/classie.js"></script>
+		<script src="scripts/modal.js"></script>
+
+ 		<script src="scripts/date-time.js"></script>
 
 
 

@@ -16,7 +16,7 @@ function updateClock ( )
   currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
 
   // Choose either "AM" or "PM" as appropriate
-  var timeOfDay = ( currentHours < 12 ) ? "a" : "p";
+  var timeOfDay = ( currentHours < 12 ) ? "" : "";
 
   // Convert the hours component to 12-hour format if needed
   currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;

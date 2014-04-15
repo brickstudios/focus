@@ -14,17 +14,48 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: .4;
+	z-index: -99;
 	}
 
 div.container {
   	@include outer-container;
 }
 
+
 .typography {
-	@include span-columns(6);
+	@include span-columns(8);
 	@include shift(3);
 	padding-top:20%;
-	z-index: 999999999; position: absolute;
 	text-align: center;
 }
+
+.typography {
+  @include media($mobile) {
+    @include span-columns(4);
+    @include shift(0);
+  }
+}
+.typography h2 {
+  @include media($mobile) {
+    font-size: 2em;
+  }
+}
+.typography h1 {
+  @include media($mobile) {
+    font-size: 6em;
+  }
+}
+
+
+.cbp-spmenu-left.cbp-spmenu-open, .cbp-spmenu-right.cbp-spmenu-open {
+ @include media($desktop_small) {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-top: 300px;
+  }
+}
+
+.cbp-spmenu h6 {padding-left: 15px;margin-bottom: -10px; padding-top: 20px; padding-bottom: 10px; font-size: 20px; color: $light-green;}
+
 
