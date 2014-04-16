@@ -23,9 +23,8 @@ div.container {
 
 
 .typography {
-	@include span-columns(8);
-	@include shift(3);
-	padding-top:20%;
+	@include span-columns(14);
+	padding-top:25%;
 	text-align: center;
 }
 

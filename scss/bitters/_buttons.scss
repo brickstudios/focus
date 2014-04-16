@@ -1,0 +1,18 @@
+button {
+	margin-right: 20px;
+	background-color: #212121;
+	height: 50px;
+	width: 120px;
+	display: inline-block;
+
+	border: none;
+	@include border-top-radius(40px);
+	@include border-bottom-radius(4px);
+	@include border-left-radius(40px);
+	@include border-right-radius(40px);
+	outline: none;
+	}
+button:hover {
+background: tint($light-green, 40%);
+color: #212121;
+}
