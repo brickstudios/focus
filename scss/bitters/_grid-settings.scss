@@ -14,7 +14,6 @@ $max-width: em(1280);
 
 // Breakpoints
 ///////////////////////////////////////////////////////////////////////////////
-$desktop_lrg: new-breakpoint(max-width 1500 14);
 $desktop_med: new-breakpoint(max-width 1120 14);
 $desktop_small: new-breakpoint(max-width 960px 12);
 $tablet-landscape: new-breakpoint(max-width 800px 10);
